@@ -15,18 +15,16 @@ background-color: #ebe4e7;
     color: black;
 }
 
-p {
+a {
     color: black;
-    font-size: medium;
-    text-align: left;
 }
+
 .header h1 {
     display: inline-block;
     font-size: 40px;
-    padding-block: 10px;
-    
+    padding-block: 10px;    
 }
- /* done */
+ 
 .header div {
     color: #fff0f4;
     padding-top: 50px;
@@ -45,27 +43,109 @@ p {
     background-image: url("../images/Hayden\ with\ the\ Antonov.png");
     background-position: center;
     background-size: cover;
-
 }
 
 .text-block {
-    bottom: 20px;
+    position: absolute;
+    bottom: 30px;
     right: 20px;
-    padding-block: 10px;
-    background-color: rgb(59, 119, 172);
+    font-size: larger;
+    background-color: rgb(57, 71, 68);
     color: black;
-    padding: left;
-    float: right;
-
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.sidebar {
+.sidebar1 {
     width: 400px;
     height: 300px;
+    float: left;
     background-color: yellow;
     font-size: larger;
-    
-    ;
+    border-right: solid blue 5px;
+    margin-right: 5px;   
+ }
+
+.content {
+    float: right;
+    margin-right: center;
+    text-align: right;
+    font-size: 200%;
+    padding-right: 5px;         
+}
+
+.paragraph {
+    width: 1440px;
+    height: 300px;
+    background-color: silver;
+    position: unset;
+    display: block;
+    float: right;
+    margin-right: 40px;
+    font-size: larger;    
+}
+
+.sidebar2 {
+    width: 400px;
+    height: 1600px;
+    float: left;
+    background-color: yellow;
+    font-size: larger;
+    border-right: solid blue 5px;
+    margin-right: 5px;  
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar1,.sidebar2
+    nav {
+        flex-direction: column;
+     }
+}
+.crew {
+    width: 1440px;
+    height: 700px;
+    background-color: silver;
+    position: unset;
+    display: block;
+    float: right;
+    margin-right: 40px;
+    font-size: larger; 
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.imagebox {
+    position: absolute;
+    bottom: 0;
+    left:0;
 }
 .subtitle {
     box-shadow: inset;
@@ -77,11 +157,7 @@ p {
 
 }
 
-.content {
-    float: right;
-    margin-right: center;
-    
-}
+
 .header div ul {
     list-style-type: none;
 }
