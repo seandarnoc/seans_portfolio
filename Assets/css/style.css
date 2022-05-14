@@ -30,6 +30,7 @@ a {
     padding-top: 50px;
     margin-right: 20px;
     float: right ;
+    display: flex;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
 }
@@ -45,10 +46,14 @@ a {
     background-size: cover;
 }
 
+nav a {
+    display: flexbox;    
+}
+
 .text-block {
     position: absolute;
     bottom: 30px;
-    right: 20px;
+    right: 40px;
     font-size: larger;
     background-color: rgb(57, 71, 68);
     color: black;
@@ -80,16 +85,18 @@ a {
     width: 1440px;
     height: 300px;
     background-color: silver;
-    position: unset;
+    position: right;
     display: block;
     float: right;
     margin-right: 40px;
     font-size: larger;    
 }
 
+
+
 .sidebar2 {
     width: 400px;
-    height: 1600px;
+    height: 1340px;
     float: left;
     background-color: yellow;
     font-size: larger;
@@ -104,43 +111,113 @@ main {
     margin-top: 2%;
 }
 
-@media screen and (max-width: 768px) {
-    .sidebar1,.sidebar2
-    nav {
-        flex-direction: column;
-     }
-}
+
 .crew {
     width: 1440px;
     height: 700px;
     background-color: silver;
     position: unset;
     display: block;
-    float: right;
+    float: left;
     margin-right: 40px;
     font-size: larger; 
     margin-top: 20px;
 }
 
+.plane {
+    width: 715px;
+    height: 300px;
+    background-color: silver;
+    position: unset;
+    display: block;
+    float: left;
+    flex-direction: column;
+    margin-right: 0px;
+    font-size: larger; 
+    margin-top: 20px;
+}
 
+.jeep {
+    width: 715px;
+    height: 300px;
+    background-color: silver;
+    position: unset;
+    float: left;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 10px;
+    font-size: larger; 
+    margin-top: 20px;
 
+}
 
+.atlanta {
+    width: 715px;
+    height: 300px;
+    background-color: silver;
+    position: unset;
+    display: block;
+    float: left;
+    flex-direction: column;
+    margin-right: 0px;
+    font-size: larger; 
+    margin-top: 20px;
+}
 
+.calculator {
+    width: 715px;
+    height: 300px;
+    background-color: silver;
+    position: unset;
+    float: left;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 10px;
+    font-size: larger; 
+    margin-top: 20px;
 
+}
 
+.sidebar3 {
+    width: 400px;
+    height: 100px;
+    float: left;
+    background-color: yellow;
+    font-size: larger;
+    border-right: solid blue 5px;
+    margin-right: 5px;  
+    margin-top: 20px; 
 
+}
 
+H2:hover, img:hover {
+    color: red;
+}
 
+.footer {
+    float: left;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.content1 {
+    position: absolute;
+    float: right;
+    margin-right: center;
+    font-size: 200%;
+    padding-right: 5px;
+    word-spacing: 20px;
+}
 
-
-
-
-
-
-
-
-
-
+.text-block1 {
+    position: absolute;
+    font-size: larger;
+    background-color: rgb(57, 71, 68);
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .imagebox {
     position: absolute;
@@ -151,21 +228,18 @@ main {
     box-shadow: inset;
     float: right;
 }
+
 .float-right {
     float: right;
     margin-left: 15px;
-
 }
 
-
-.header div ul {
-    list-style-type: none;
-}
-
-.linkedin {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+    aside {
+        order: 2;
+    }
 }
